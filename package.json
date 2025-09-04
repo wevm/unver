@@ -1,0 +1,55 @@
+{
+	"name": "unver",
+	"version": "0.0.0",
+	"type": "module",
+	"description": "Universal Signature Verification for Ethers",
+	"scripts": {
+		"build": "zshy --project tsconfig.build.json",
+		"check": "biome check . --write --unsafe",
+		"gen": "bun run scripts/generateTypedArtifacts.ts",
+		"test": "bun test src/index.test.ts"
+	},
+	"zshy": {
+		"exports": {
+			".": "./src/index.ts"
+		},
+		"cjs": false
+	},
+	"keywords": [
+		"ethers",
+		"signature",
+		"verification"
+	],
+	"author": "jxom <j@wevm.dev>",
+	"license": "MIT",
+	"devEngines": {
+		"runtime": {
+			"name": "bun",
+			"version": ">=1.2",
+			"onFail": "error"
+		}
+	},
+	"peerDependencies": {
+		"ethers": "^6"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.2",
+		"@types/bun": "latest",
+		"ethers": "^6.15.0",
+		"prool": "^0.0.24",
+		"typescript": "^5.9.2",
+		"zshy": "^0.4.1"
+	},
+	"files": [
+		"dist"
+	],
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"private": true
+}

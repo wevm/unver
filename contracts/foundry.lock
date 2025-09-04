@@ -1,0 +1,23 @@
+{
+  "../lib/forge-std": {
+    "rev": "a3dca253700f19f15b1837c57c67b9388f5cc3fb"
+  },
+  "contracts/lib/solady": {
+    "tag": {
+      "name": "v0.1.24",
+      "rev": "a5bb996e91aae5b0c068087af7594d92068b12f1"
+    }
+  },
+  "lib/forge-std": {
+    "tag": {
+      "name": "v1.10.0",
+      "rev": "8bbcf6e3f8f62f419e5429a0bd89331c85c37824"
+    }
+  },
+  "lib/solady": {
+    "tag": {
+      "name": "v0.1.26",
+      "rev": "acd959aa4bd04720d640bf4e6a5c71037510cc4b"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# General
+dist
+node_modules
+
+# Foundry
+/contracts/generated.ts
+/contracts/cache/
+/contracts/out/
+!/contracts/broadcast
+/contracts/broadcast/*/31337/
+/contracts/broadcast/**/dry-run/
