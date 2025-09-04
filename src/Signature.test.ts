@@ -116,7 +116,7 @@ test.describe('verify', () => {
 		// Test valid
 		const valid = await Signature.verify(
 			wallet.address,
-			digest,	
+			digest,
 			signature.serialized,
 			provider,
 		)

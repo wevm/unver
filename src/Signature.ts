@@ -12,10 +12,44 @@ export async function verify(
 	provider: ethers.AbstractProvider,
 ): Promise<boolean> {
 	if (typeof signature === 'string') {
+		// TODO: ERC-8010 validation
+		// if (signature.endsWith('8010801080108010801080108010801080108010801080108010801080108010')) {
+		// 	const result = await _verifyErc8010(address, digest, signature, provider)
+		// 	if (result) return true
+		// }
 		const result = await verifyErc6492(address, digest, signature, provider)
 		if (result) return true
 	}
 	return verifyEcdsa(address, digest, signature)
+}
+
+export async function verifyMessage(
+	_address: string,
+	_message: Uint8Array | string,
+	_signature: ethers.SignatureLike,
+	_provider: ethers.AbstractProvider,
+): Promise<boolean> {
+	throw new Error('TODO')
+}
+
+export async function verifyTypedData(
+	_domain: ethers.TypedDataDomain,
+	_types: Record<string, Array<ethers.TypedDataField>>,
+	_value: Record<string, unknown>,
+	_signature: ethers.SignatureLike,
+	_provider: ethers.AbstractProvider,
+): Promise<boolean> {
+	throw new Error('TODO')
+}
+
+/** @internal */
+async function _verifyErc8010(
+	_address: string,
+	_digest: Uint8Array | string,
+	_signature: string,
+	_provider: ethers.AbstractProvider,
+): Promise<boolean> {
+	throw new Error('TODO')
 }
 
 /** @internal */
