@@ -14,7 +14,7 @@ const address = '0x...'
 const digest = '0x...'
 const signature = '0x...'
 
-const valid = await unver.verify(address, digest, signature, provider)
+const valid = await unver.Signature.verify(address, digest, signature, provider)
 ```
 
 ## Development
