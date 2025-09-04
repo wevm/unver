@@ -1,6 +1,8 @@
 import { join } from 'node:path'
 import { Glob } from 'bun'
 
+console.log('Generating typed artifacts')
+
 const generatedPath = join(import.meta.dir, '../contracts/generated.ts')
 Bun.write(generatedPath, '')
 
@@ -31,3 +33,5 @@ for await (const file of glob.scan('.')) {
 }
 
 writer.end()
+
+console.log('Done')

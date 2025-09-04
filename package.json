@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "zshy --project tsconfig.build.json",
 		"check": "biome check . --write --unsafe",
-		"gen": "bun run scripts/generateTypedArtifacts.ts",
+		"gen": "forge build --config-path ./contracts/foundry.toml && bun run scripts/generateTypedArtifacts.ts",
 		"test": "bun test src/index.test.ts"
 	},
 	"zshy": {
