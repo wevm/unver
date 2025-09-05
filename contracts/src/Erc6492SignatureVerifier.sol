@@ -6,7 +6,7 @@ interface IERC1271Wallet {
     function isValidSignature(bytes32 hash, bytes calldata signature) external view returns (bytes4 magicValue);
 }
 
-contract ERC6492SignatureVerifier {
+contract Erc6492SignatureVerifier {
     // ERC-6492 suffix: https://eips.ethereum.org/EIPS/eip-6492
     bytes32 private constant ERC6492_DETECTION_SUFFIX =
         0x6492649264926492649264926492649264926492649264926492649264926492;
@@ -62,7 +62,7 @@ contract ERC6492SignatureVerifier {
     }
 }
 
-contract DeploylessERC6492SignatureVerifier is ERC6492SignatureVerifier {
+contract DeploylessErc6492SignatureVerifier is Erc6492SignatureVerifier {
     constructor(address _signer, bytes32 _hash, bytes memory _signature) {
         bool isValid = isValidSig(_signer, _hash, _signature);
         assembly {
