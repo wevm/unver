@@ -27,7 +27,7 @@ export namespace Provider {
 }
 
 /**
- * Wraps an `ethers.AbstractProvider` with the `VerifyProvider` interface.
+ * Wraps an `ethers.AbstractProvider` with universal signature verification utilities.
  * 
  * @deprecated Use `createPublicClient` from `viem` instead.
  */
