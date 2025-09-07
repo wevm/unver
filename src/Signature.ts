@@ -5,9 +5,9 @@ const abiCoder = ethers.AbiCoder.defaultAbiCoder()
 
 /**
  * Verifies a `signature` for a given `address` and `digest`.
- * 
+ *
  * @deprecated Use `verifyHash` from `viem/actions` instead.
- * 
+ *
  * @param provider - The ethers.AbstractProvider to use for verification.
  * @param address - The address of the signer.
  * @param digest - The digest to verify.
@@ -36,9 +36,9 @@ export async function verifyHash(
 
 /**
  * Verifies a `signature` for a given `address` and `message`.
- * 
+ *
  * @deprecated Use `verifyMessage` from `viem/actions` instead.
- * 
+ *
  * @param provider - The ethers.AbstractProvider to use for verification.
  * @param address - The address of the signer.
  * @param message - The message to verify.
@@ -57,9 +57,9 @@ export async function verifyMessage(
 
 /**
  * Verifies a `signature` for a given `address` and `typedData`.
- * 
+ *
  * @deprecated Use `verifyTypedData` from `viem/actions` instead.
- * 
+ *
  * @param provider - The ethers.AbstractProvider to use for verification.
  * @param address - The address of the signer.
  * @param domain - The domain of the typed data.
