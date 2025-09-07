@@ -15,6 +15,8 @@ Universal Signature Verification for [ethers.js](https://github.com/ethers-io/et
   - [`Signature.verifyMessage`](#signatureverifymessage)
   - [`Signature.verifyTypedData`](#signatureverifytypeddata)
 - [Development](#development)
+- [Community](#community)
+- [Support](#support)
 
 
 ## Usage
