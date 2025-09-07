@@ -21,6 +21,7 @@
 	},
 	"javascript": {
 		"formatter": {
+			"indentStyle": "space",
 			"quoteStyle": "single",
 			"semicolons": "asNeeded"
 		}

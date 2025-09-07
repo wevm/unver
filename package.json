@@ -50,6 +50,5 @@
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js"
 		}
-	},
-	"private": true
+	}
 }
