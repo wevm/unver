@@ -6,6 +6,17 @@ Universal Signature Verification for [ethers.js](https://github.com/ethers-io/et
 - Predeployed Contract Accounts via [ERC-6492](https://eips.ethereum.org/EIPS/eip-6492)
 - Predelegated Contract Accounts via [ERC-8010](https://github.com/jxom/ERCs/blob/799f618e1f9b7ad1dcdf3ccc46b9b7a9309c086f/ERCS/erc-8010.md)
 
+## Table of Contents
+
+- [Usage](#usage)
+- [API Reference](#api-reference)
+  - [`VerifyProvider.wrap`](#verifyproviderwrap)
+  - [`Signature.verifyHash`](#signatureverifyhash)
+  - [`Signature.verifyMessage`](#signatureverifymessage)
+  - [`Signature.verifyTypedData`](#signatureverifytypeddata)
+- [Development](#development)
+
+
 ## Usage
 
 ```ts
@@ -149,3 +160,17 @@ declare function verifyTypedData(
 bun install  # Install dependencies
 bun test     # Run tests
 ```
+
+## Community
+
+Check out the following places for more Ox-related content:
+
+- Follow [@wevm_dev](https://x.com/wevm_dev), [@jxom](https://x.com/_jxom), and [@awkweb](https://x.com/awkweb) on Twitter for project updates
+- Join the [discussions on GitHub](https://github.com/wevm/ox/discussions)
+
+## Support
+
+- [GitHub Sponsors](https://github.com/sponsors/wevm?metadata_campaign=docs_support)
+- [Gitcoin Grant](https://wagmi.sh/gitcoin)
+- [wevm.eth](https://etherscan.io/enslookup-search?search=wevm.eth)
+ 
