@@ -35,14 +35,12 @@ const provider = VerifyProvider.wrap(
 )
 ```
 
-<details>
-<summary>Interface</summary>
+#### Interface
 
 ```ts
-export function wrap(provider: ethers.AbstractProvider): 
+declare function wrap(provider: ethers.AbstractProvider): 
   Provider<ethers.AbstractProvider & VerifyProvider> 
 ```
-</details>
 
 ### `Signature.verifyHash`
 
@@ -61,19 +59,16 @@ import { Signature } from 'unver'
 const valid = await Signature.verifyHash(provider, address, digest, signature)
 ```
 
-<details>
-<summary>Interface</summary>
+#### Interface
 
 ```ts
-export function verifyHash(
+declare function verifyHash(
   provider: ethers.AbstractProvider,
   address: string,
   digest: Uint8Array | string,
   signature: ethers.SignatureLike,
 ): Promise<boolean>
 ```
-</details>
-
 
 ### `Signature.verifyMessage`
 
@@ -92,18 +87,16 @@ import { Signature } from 'unver'
 const valid = await Signature.verifyMessage(provider, address, message, signature)
 ```
 
-<details>
-<summary>Interface</summary>
+#### Interface
 
 ```ts
-export function verifyMessage(
+declare function verifyMessage(
   provider: ethers.AbstractProvider,
   address: string,
   message: Uint8Array | string,
   signature: ethers.SignatureLike,
 ): Promise<boolean>
 ```
-</details>
 
 ### `Signature.verifyTypedData`
 
@@ -137,11 +130,10 @@ import { Signature } from 'unver'
 const valid = await Signature.verifyTypedData(provider, address, domain, types, value, signature)
 ```
 
-<details>
-<summary>Interface</summary>
+#### Interface
 
 ```ts
-export function verifyTypedData(
+declare function verifyTypedData(
   provider: ethers.AbstractProvider,
   address: string,
   domain: ethers.TypedDataDomain,
@@ -150,7 +142,6 @@ export function verifyTypedData(
   signature: ethers.SignatureLike,
 ): Promise<boolean>
 ```
-</details>
 
 ## Development
 
