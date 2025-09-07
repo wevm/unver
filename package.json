@@ -8,6 +8,7 @@
 		"check": "biome check . --write --unsafe",
 		"check:types": "tsc --noEmit",
 		"gen": "forge build --config-path ./contracts/foundry.toml && bun run scripts/generateTypedArtifacts.ts",
+		"postinstall": "bun gen",
 		"test": "bun test src"
 	},
 	"zshy": {
