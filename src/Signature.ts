@@ -3,6 +3,17 @@ import * as Constants from './Constants.ts'
 
 const abiCoder = ethers.AbiCoder.defaultAbiCoder()
 
+/**
+ * Verifies a `signature` for a given `address` and `digest`.
+ * 
+ * @deprecated Use `verifyHash` from `viem/actions` instead.
+ * 
+ * @param provider - The ethers.AbstractProvider to use for verification.
+ * @param address - The address of the signer.
+ * @param digest - The digest to verify.
+ * @param signature - The signature to verify.
+ * @returns Whether the signature is valid.
+ */
 export async function verifyHash(
   provider: ethers.AbstractProvider,
   address: string,
@@ -23,6 +34,17 @@ export async function verifyHash(
   return verifyEcdsa(address, digest, signature)
 }
 
+/**
+ * Verifies a `signature` for a given `address` and `message`.
+ * 
+ * @deprecated Use `verifyMessage` from `viem/actions` instead.
+ * 
+ * @param provider - The ethers.AbstractProvider to use for verification.
+ * @param address - The address of the signer.
+ * @param message - The message to verify.
+ * @param signature - The signature to verify.
+ * @returns Whether the signature is valid.
+ */
 export async function verifyMessage(
   provider: ethers.AbstractProvider,
   address: string,
@@ -33,6 +55,19 @@ export async function verifyMessage(
   return verifyHash(provider, address, digest, signature)
 }
 
+/**
+ * Verifies a `signature` for a given `address` and `typedData`.
+ * 
+ * @deprecated Use `verifyTypedData` from `viem/actions` instead.
+ * 
+ * @param provider - The ethers.AbstractProvider to use for verification.
+ * @param address - The address of the signer.
+ * @param domain - The domain of the typed data.
+ * @param types - The types of the typed data.
+ * @param value - The value of the typed data.
+ * @param signature - The signature to verify.
+ * @returns Whether the signature is valid.
+ */
 export async function verifyTypedData(
   provider: ethers.AbstractProvider,
   address: string,

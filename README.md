@@ -163,10 +163,9 @@ bun test     # Run tests
 
 ## Community
 
-Check out the following places for more Ox-related content:
+Check out the following places for more content:
 
 - Follow [@wevm_dev](https://x.com/wevm_dev), [@jxom](https://x.com/_jxom), and [@awkweb](https://x.com/awkweb) on Twitter for project updates
-- Join the [discussions on GitHub](https://github.com/wevm/ox/discussions)
 
 ## Support
 

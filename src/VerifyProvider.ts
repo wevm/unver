@@ -26,6 +26,11 @@ export namespace Provider {
   }
 }
 
+/**
+ * Wraps an `ethers.AbstractProvider` with the `VerifyProvider` interface.
+ * 
+ * @deprecated Use `createPublicClient` from `viem` instead.
+ */
 export function wrap<provider extends ethers.AbstractProvider>(
   provider: provider,
 ): Provider<provider> {

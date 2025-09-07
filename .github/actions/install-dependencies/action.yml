@@ -1,0 +1,13 @@
+name: "Install dependencies"
+description: "Prepare repository and all dependencies"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up foundry
+      uses: foundry-rs/foundry-toolchain@v1
+      with:
+        version: nightly
+
+    - name: Set up Bun
+      uses: oven-sh/setup-bun@v2
