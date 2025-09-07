@@ -5,7 +5,7 @@
 	"description": "Universal Signature Verification for Ethers",
 	"scripts": {
 		"build": "zshy --project tsconfig.build.json",
-		"changeset:prepublish": "bun build",
+		"changeset:prepublish": "bun run build",
     "changeset:publish": "bun changeset:prepublish && changeset publish",
     "changeset:version": "changeset version && bun changeset:prepublish && bun check",
 		"check": "biome check . --write --unsafe",
