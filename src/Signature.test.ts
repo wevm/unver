@@ -8,11 +8,11 @@ import {
   EoaInitializer,
   EoaOptional,
 } from '../contracts/generated.ts'
-import { VerifyProvider } from './index.ts'
+import { UnverProvider } from './index.ts'
 
 const abiCoder = ethers.AbiCoder.defaultAbiCoder()
 const anvil = prool.anvil()
-const provider = VerifyProvider.wrap(
+const provider = UnverProvider.wrap(
   new ethers.JsonRpcProvider(`http://localhost:${anvil.port}`, undefined, {
     cacheTimeout: -1,
   }),
