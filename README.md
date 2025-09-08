@@ -10,7 +10,7 @@ Universal Signature Verification for [ethers.js](https://github.com/ethers-io/et
 
 - [Usage](#usage)
 - [API Reference](#api-reference)
-  - [`VerifyProvider.wrap`](#verifyproviderwrap)
+  - [`UnverProvider.wrap`](#unverproviderwrap)
   - [`Signature.verifyHash`](#signatureverifyhash)
   - [`Signature.verifyMessage`](#signatureverifymessage)
   - [`Signature.verifyTypedData`](#signatureverifytypeddata)
@@ -23,9 +23,9 @@ Universal Signature Verification for [ethers.js](https://github.com/ethers-io/et
 
 ```ts
 import * as ethers from 'ethers'
-import { VerifyProvider } from 'unver'
+import { UnverProvider } from 'unver'
 
-const provider = VerifyProvider.wrap(
+const provider = UnverProvider.wrap(
   new ethers.JsonRpcProvider('https://eth.merkle.io')
 )
 
@@ -38,12 +38,12 @@ const valid = await provider.verifyHash(address, digest, signature)
 
 ## API Reference
 
-### `VerifyProvider.wrap`
+### `UnverProvider.wrap`
 
-Wraps an `ethers.AbstractProvider` with the `VerifyProvider` interface.
+Wraps an `ethers.AbstractProvider` with the `UnverProvider` interface.
 
 ```ts
-const provider = VerifyProvider.wrap(
+const provider = UnverProvider.wrap(
   new ethers.JsonRpcProvider('https://eth.merkle.io')
 )
 ```
@@ -52,7 +52,7 @@ const provider = VerifyProvider.wrap(
 
 ```ts
 declare function wrap(provider: ethers.AbstractProvider): 
-  Provider<ethers.AbstractProvider & VerifyProvider> 
+  Provider<ethers.AbstractProvider & UnverProvider> 
 ```
 
 ### `Signature.verifyHash`
