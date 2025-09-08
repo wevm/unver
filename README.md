@@ -8,6 +8,7 @@ Universal Signature Verification for [ethers.js](https://github.com/ethers-io/et
 
 ## Table of Contents
 
+- [Install](#install)
 - [Usage](#usage)
 - [API Reference](#api-reference)
   - [`UnverProvider.wrap`](#unverproviderwrap)
@@ -18,6 +19,11 @@ Universal Signature Verification for [ethers.js](https://github.com/ethers-io/et
 - [Community](#community)
 - [Support](#support)
 
+## Install
+
+```bash
+npm i unver
+```
 
 ## Usage
 
